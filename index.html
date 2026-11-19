@@ -3,165 +3,470 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Fellows Kitchen | Bakery &amp; Cooking School</title>
-  <meta name="description" content="Fellows Kitchen – hands-on baking and cooking workshops.">
+  <title>Fellows Bakery | Artisan Bakery &amp; Baking School</title>
+  <meta name="description" content="Fellows Bakery – artisan bread, pastries and hands-on baking workshops, baked fresh every day.">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="icon" type="image/png" href="images/logo-black.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600&display=swap">
+  <link rel="preload" as="image" href="images/hero.jpg">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
   <header class="site-header">
     <div class="container header-inner">
-      <a href="index.html" class="logo placeholder" aria-label="Fellows Kitchen home">LOGO</a>
+      <a href="index.html" class="logo" aria-label="Fellows Bakery home">
+        <img src="images/logo-black.png" alt="Fellows Bakery" width="800" height="578">
+      </a>
 
-      <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
-
-      <nav class="main-nav">
+      <nav class="main-nav" aria-label="Main">
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="our-story.html">About Us</a>
         <a href="workshops.html">Workshops</a>
         <a href="vouchers.html">Gift Vouchers</a>
-        <a href="community.html">Community</a>
         <a href="visit.html">Visit Us</a>
-        <a href="our-story.html">Our Story</a>
-        <a href="book.html" class="btn btn-small">Book a Class</a>
+        <a href="contact.html">Contact</a>
       </nav>
+
+      <div class="header-actions">
+        <a href="book.html" class="btn btn-dark">Book a Class<svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+        <button class="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
     </div>
+
+    <nav class="mobile-menu" id="mobile-menu" aria-label="Mobile">
+      <div class="container">
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="our-story.html">About Us</a>
+        <a href="workshops.html">Workshops</a>
+        <a href="vouchers.html">Gift Vouchers</a>
+        <a href="visit.html">Visit Us</a>
+        <a href="contact.html">Contact</a>
+        <a href="book.html" class="btn btn-dark">Book a Class<svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+      </div>
+    </nav>
   </header>
 
   <main>
 
-    <section class="hero">
-      <div class="placeholder hero-image">HERO IMAGE / GIF</div>
-    </section>
-
-    <section class="intro container narrow">
-      <h1>Our Cooking School</h1>
-      <p>
-        Roll up your sleeves and join us in the kitchen. Our hands-on workshops
-        are led by experienced bakers and chefs, and are perfect for complete
-        beginners and keen home cooks alike.
-      </p>
-    </section>
-
-    <section class="workshops container">
-      <div class="section-heading">
-        <span class="icon" aria-hidden="true">✦</span>
-        <h2>Popular Workshops &amp; Gifts</h2>
-        <p class="subline">Our most-loved classes, chosen by you</p>
+    <section class="hero" style="background-image:url('images/hero.jpg')">
+      <div class="container hero-content">
+        <h1 class="type-h1">Real Bread And Pastries, <span>Baked Fresh Every Morning</span></h1>
+        <div class="btn-row">
+          <a href="book.html" class="btn btn-light">Book a Class<svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+          <a href="workshops.html" class="btn btn-glass">View Workshops</a>
+        </div>
       </div>
-
-      <div class="card-grid">
-        <article class="card">
-          <div class="placeholder card-image">IMAGE</div>
-          <h3><a href="workshops.html">Doughnut Workshop</a></h3>
-          <p class="price">From: $150.00</p>
-        </article>
-        <article class="card">
-          <div class="placeholder card-image">IMAGE</div>
-          <h3><a href="workshops.html">Croissant Workshop</a></h3>
-          <p class="price">From: $150.00</p>
-        </article>
-        <article class="card">
-          <div class="placeholder card-image">IMAGE</div>
-          <h3><a href="workshops.html">Introduction to Sourdough</a></h3>
-          <p class="price">From: $150.00</p>
-        </article>
-        <article class="card">
-          <div class="placeholder card-image">IMAGE</div>
-          <h3><a href="workshops.html">Italian Baking Workshop</a></h3>
-          <p class="price">From: $150.00</p>
-        </article>
-        <article class="card">
-          <div class="placeholder card-image">IMAGE</div>
-          <h3><a href="workshops.html">Cinnamon Roll Workshop</a></h3>
-          <p class="price">From: $150.00</p>
-        </article>
-      </div>
-
-      <div class="center">
-        <a href="workshops.html" class="btn">Bake with us</a>
+      <div class="hero-story">
+        <h2>The Story Of Our Bakery</h2>
+        <p>Fellows Bakery began with a single oven and a love of real bread. Today we bake fresh every morning and share our craft in our baking school.</p>
       </div>
     </section>
 
-    <section class="split container">
-      <div class="placeholder split-image">IMAGE</div>
-      <div class="split-text">
-        <h2>Gift Vouchers</h2>
-        <p>Give the gift of a day in the kitchen. Our vouchers can be used for any workshop and make the perfect present for the food lover in your life.</p>
-        <a href="vouchers.html" class="btn">Learn more</a>
+    <section class="panel section">
+      <div class="container">
+      <div class="section-head center reveal">
+        <span class="badge"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v4M12 17v4M3 12h4M17 12h4M5.6 5.6l2.8 2.8M15.6 15.6l2.8 2.8M5.6 18.4l2.8-2.8M15.6 8.4l2.8-2.8"/></svg>What we bake</span>
+        <h2 class="type-title">Pick Your Favourite And Discover Something Delicious</h2>
+        <p class="lead">Browse everything we make, from the morning bread counter to our baking school.</p>
+      </div>
+        <div class="category-grid">
+        <article class="category-card reveal">
+          <div class="card-top"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19V12.8A4 4 0 0 1 7 5h10a4 4 0 0 1 2 7.8V19a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1Z"/><path d="m9.5 12 2-2.5M13 13l2-2.5"/></svg><span class="card-num">001//</span></div>
+          <div>
+            <h3 class="type-h6">Artisan Breads</h3>
+            <p>Slow-fermented sourdough, seeded loaves and crusty baguettes, baked fresh every morning.</p>
+          </div>
+        </article>
+        <article class="category-card reveal">
+          <div class="card-top"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 15.5C4 9 8 5.5 12 5.5s8 3.5 9 10"/><path d="M3 15.5 7 17l2-5M21 15.5 17 17l-2-5M9 12c1-2.5 4.5-2.5 6 0M12 5.5V10"/></svg><span class="card-num">002//</span></div>
+          <div>
+            <h3 class="type-h6">Pastries &amp; Croissants</h3>
+            <p>Buttery laminated pastries, made by hand over three days for the flakiest layers.</p>
+          </div>
+        </article>
+        <article class="category-card reveal">
+          <div class="card-top"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="11" width="16" height="9" rx="1.5"/><path d="M4 15c2 1.3 4 1.3 6 0s4-1.3 6 0 3 1.3 4 0M8 11V8M12 11V8M16 11V8M8 5v.5M12 5v.5M16 5v.5"/></svg><span class="card-num">003//</span></div>
+          <div>
+            <h3 class="type-h6">Cakes &amp; Celebrations</h3>
+            <p>Celebration cakes and sweet treats made to order for birthdays, weddings and everything in between.</p>
+          </div>
+        </article>
+        <article class="category-card reveal">
+          <div class="card-top"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17.5h10V21H7zM7 17.5V14a4 4 0 0 1-1.5-7.5A4.2 4.2 0 0 1 12 4a4.2 4.2 0 0 1 6.5 2.5A4 4 0 0 1 17 14v3.5"/></svg><span class="card-num">004//</span></div>
+          <div>
+            <h3 class="type-h6">Baking Workshops</h3>
+            <p>Hands-on classes for every level, from your very first loaf to show-stopping bakes.</p>
+          </div>
+        </article>
+        <article class="category-card reveal">
+          <div class="card-top"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 18h18M5 18a7 7 0 0 1 14 0M12 9V7.5M10.5 7.5h3"/></svg><span class="card-num">005//</span></div>
+          <div>
+            <h3 class="type-h6">Catering &amp; Events</h3>
+            <p>Fresh bread, pastries and grazing boards for your office, event or special occasion.</p>
+          </div>
+        </article>
+        <article class="category-card reveal">
+          <div class="card-top"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="8" width="17" height="4" rx="1"/><path d="M5 12v8.5h14V12M12 8v12.5M12 8S10.5 4 8 4a2 2 0 0 0 0 4h4Zm0 0s1.5-4 4-4a2 2 0 0 1 0 4h-4Z"/></svg><span class="card-num">006//</span></div>
+          <div>
+            <h3 class="type-h6">Gift Vouchers</h3>
+            <p>Give the gift of a day in the kitchen, or a treat from our counter.</p>
+          </div>
+        </article>
+        </div>
       </div>
     </section>
 
-
-    <section class="split split-reverse container">
-      <div class="placeholder split-image">IMAGE</div>
-      <div class="split-text">
-        <h2>The Young Cooks Project</h2>
-        <p>We believe everyone should have the chance to learn to cook. Our community programme brings free classes to children and young people in our local area.</p>
-        <a href="community.html" class="btn">Learn more</a>
+    <section class="section">
+      <div class="container">
+      <div class="section-head center reveal">
+        <span class="badge"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v4M12 17v4M3 12h4M17 12h4M5.6 5.6l2.8 2.8M15.6 15.6l2.8 2.8M5.6 18.4l2.8-2.8M15.6 8.4l2.8-2.8"/></svg>Our workshops</span>
+        <h2 class="type-title">Classes Designed To Make You A Better Baker</h2>
+        <p class="lead">Small, hands-on classes led by our bakers. Everything you make, you take home.</p>
       </div>
-    </section>
-
-    <section class="visit container">
-      <div class="section-heading">
-        <h2>Plan your visit</h2>
-      </div>
-
-      <div class="tile-grid">
-        <a href="visit.html" class="tile">
-          <div class="placeholder tile-image">IMAGE</div>
-          <span>All Locations</span>
+        <div class="row-list">
+        <a href="book.html" class="row-item reveal">
+          <div>
+            <h3 class="type-h5">Sourdough Masterclass</h3>
+            <p>Learn to feed a starter, shape a loaf and bake a crackling sourdough you'll be proud of at home.</p>
+          </div>
+          <div class="row-meta"><span class="row-link">Book Now <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></span></div>
         </a>
-        <a href="workshops.html" class="tile">
-          <div class="placeholder tile-image">IMAGE</div>
-          <span>Cooking Courses</span>
+        <a href="book.html" class="row-item reveal">
+          <div>
+            <h3 class="type-h5">Croissant &amp; Laminated Dough</h3>
+            <p>Master the art of lamination and bake croissants, pain au chocolat and more from scratch.</p>
+          </div>
+          <div class="row-meta"><span class="row-link">Book Now <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></span></div>
         </a>
-        <a href="vouchers.html" class="tile">
-          <div class="placeholder tile-image">IMAGE</div>
-          <span>Gift Vouchers</span>
+        <a href="book.html" class="row-item reveal">
+          <div>
+            <h3 class="type-h5">Doughnut Workshop</h3>
+            <p>Mix, prove, fry and fill your own brioche doughnuts with seasonal fillings and glazes.</p>
+          </div>
+          <div class="row-meta"><span class="row-link">Book Now <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></span></div>
         </a>
-        <a href="our-story.html" class="tile">
-          <div class="placeholder tile-image">IMAGE</div>
-          <span>Our Story</span>
+        <a href="book.html" class="row-item reveal">
+          <div>
+            <h3 class="type-h5">Cake Decorating</h3>
+            <p>Pick up the piping, stacking and finishing skills to turn a simple sponge into a centrepiece.</p>
+          </div>
+          <div class="row-meta"><span class="row-link">Book Now <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></span></div>
         </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" data-carousel>
+      <div class="container">
+        <div class="section-head split-head reveal">
+          <div>
+            <span class="badge"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v4M12 17v4M3 12h4M17 12h4M5.6 5.6l2.8 2.8M15.6 15.6l2.8 2.8M5.6 18.4l2.8-2.8M15.6 8.4l2.8-2.8"/></svg>Upcoming events</span>
+            <h2 class="type-title" style="margin-top:20px">Discover What&rsquo;s Happening At The Bakery</h2>
+          </div>
+          <div class="carousel-nav">
+            <button class="carousel-btn" data-prev aria-label="Previous"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg></button>
+            <button class="carousel-btn" data-next aria-label="Next"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+          </div>
+        </div>
+        <div class="carousel reveal">
+          <article class="event-card">
+            <div class="img-holder"></div>
+            <h3 class="type-h6">Sourdough Saturday</h3>
+            <p>A morning of shaping, scoring and baking with our head baker.</p>
+            <div class="event-meta">
+              <span><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15.5" rx="2"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg>Dec 6, 2026</span>
+              <span><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></svg>9:00 AM – 12:00 PM</span>
+            </div>
+          </article>
+          <article class="event-card">
+            <div class="img-holder"></div>
+            <h3 class="type-h6">Christmas Baking Workshop</h3>
+            <p>Stollen, mince pies and festive cookies to take home for the holidays.</p>
+            <div class="event-meta">
+              <span><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15.5" rx="2"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg>Dec 13, 2026</span>
+              <span><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></svg>1:00 PM – 4:00 PM</span>
+            </div>
+          </article>
+          <article class="event-card">
+            <div class="img-holder"></div>
+            <h3 class="type-h6">Kids Holiday Baking</h3>
+            <p>School holiday fun with cookies, pizza scrolls and decorating.</p>
+            <div class="event-meta">
+              <span><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15.5" rx="2"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg>Jan 10, 2027</span>
+              <span><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></svg>10:00 AM – 12:00 PM</span>
+            </div>
+          </article>
+          <article class="event-card">
+            <div class="img-holder"></div>
+            <h3 class="type-h6">Croissant Weekend</h3>
+            <p>Two short sessions covering lamination, shaping and baking.</p>
+            <div class="event-meta">
+              <span><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15.5" rx="2"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg>Jan 24, 2027</span>
+              <span><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></svg>9:00 AM – 1:00 PM</span>
+            </div>
+          </article>
+          <article class="event-card">
+            <div class="img-holder"></div>
+            <h3 class="type-h6">Bakery Open Morning</h3>
+            <p>Meet the team, tour the ovens and taste the new season's bakes.</p>
+            <div class="event-meta">
+              <span><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15.5" rx="2"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg>Feb 7, 2027</span>
+              <span><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></svg>8:00 AM – 11:00 AM</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel section">
+      <div class="container">
+        <div class="section-head split-head reveal">
+          <div>
+            <span class="badge"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v4M12 17v4M3 12h4M17 12h4M5.6 5.6l2.8 2.8M15.6 15.6l2.8 2.8M5.6 18.4l2.8-2.8M15.6 8.4l2.8-2.8"/></svg>Why choose us</span>
+            <h2 class="type-title" style="margin-top:20px">Why Choose Fellows Bakery</h2>
+          </div>
+          <a href="our-story.html" class="btn btn-light">Learn More<svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+        </div>
+        <div class="why-grid">
+          <div class="feature-list reveal">
+          <article class="feature">
+            <div class="card-top"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0M16 4.6a3.5 3.5 0 0 1 0 6.8M18 14a6.5 6.5 0 0 1 3.5 6"/></svg><span class="card-num">001//</span></div>
+            <h3 class="type-h6">Small Class Sizes</h3>
+            <p>Classes are capped so every student gets plenty of hands-on time and one-on-one help.</p>
+          </article>
+          <article class="feature">
+            <div class="card-top"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17.5h10V21H7zM7 17.5V14a4 4 0 0 1-1.5-7.5A4.2 4.2 0 0 1 12 4a4.2 4.2 0 0 1 6.5 2.5A4 4 0 0 1 17 14v3.5"/></svg><span class="card-num">002//</span></div>
+            <h3 class="type-h6">Taught By Professional Bakers</h3>
+            <p>Learn real techniques from experienced bakers who teach the way they bake every day.</p>
+          </article>
+          <article class="feature is-active">
+            <div class="card-top"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21V9"/><path d="M12 9C9.5 9 8.5 6.5 8.5 4.5 11 4.5 12 6.5 12 9Zm0 0c2.5 0 3.5-2.5 3.5-4.5C13 4.5 12 6.5 12 9ZM12 15c-2.5 0-3.5-2.5-3.5-4.5 2.5 0 3.5 2 3.5 4.5Zm0 0c2.5 0 3.5-2.5 3.5-4.5-2.5 0-3.5 2-3.5 4.5Z"/></svg><span class="card-num">003//</span></div>
+            <h3 class="type-h6">Everything Provided</h3>
+            <p>Quality ingredients, aprons and equipment are all included, so you can just turn up and bake.</p>
+          </article>
+          </div>
+          <div class="why-media reveal">
+            <div class="img-holder"></div>
+            <div class="stat-glass">
+              <strong>2K+</strong>
+              <h3>Students Taught</h3>
+              <p>Thousands of home bakers have learned new skills in our kitchen.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container process-grid">
+        <div class="process-intro reveal">
+          <span class="badge"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v4M12 17v4M3 12h4M17 12h4M5.6 5.6l2.8 2.8M15.6 15.6l2.8 2.8M5.6 18.4l2.8-2.8M15.6 8.4l2.8-2.8"/></svg>How it works</span>
+          <h2 class="type-title">Booking A Class Made Simple</h2>
+          <p class="lead">A simple, friendly booking process so you can focus on the fun part.</p>
+          <a href="book.html" class="btn btn-dark">Book a Class<svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+        </div>
+        <div class="step-grid reveal">
+          <article class="step-card">
+            <div class="card-top"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="4" width="13" height="11" rx="1.5"/><path d="M7 19h3M14.5 16.5a2.5 2.5 0 1 0 0-.01M16.3 18.3 19 21"/></svg><span class="step-num">01</span></div>
+            <div>
+              <h3 class="type-h6">Choose A Class</h3>
+              <p>Browse our workshops and pick the bake you'd love to learn.</p>
+            </div>
+          </article>
+          <article class="step-card">
+            <div class="card-top"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15.5" rx="2"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg><span class="step-num">02</span></div>
+            <div>
+              <h3 class="type-h6">Pick A Date</h3>
+              <p>Choose a session that suits you and book online in minutes.</p>
+            </div>
+          </article>
+          <article class="step-card">
+            <div class="card-top"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17.5h10V21H7zM7 17.5V14a4 4 0 0 1-1.5-7.5A4.2 4.2 0 0 1 12 4a4.2 4.2 0 0 1 6.5 2.5A4 4 0 0 1 17 14v3.5"/></svg><span class="step-num">03</span></div>
+            <div>
+              <h3 class="type-h6">Bake With Us</h3>
+              <p>Join a small, friendly class led by one of our experienced bakers.</p>
+            </div>
+          </article>
+          <article class="step-card">
+            <div class="card-top"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l-1.2 12.5H6.2Z"/><path d="M9 10V6.5a3 3 0 0 1 6 0V10"/></svg><span class="step-num">04</span></div>
+            <div>
+              <h3 class="type-h6">Take It Home</h3>
+              <p>Head home with everything you've made, plus the recipes.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top:0">
+      <div class="container">
+      <div class="section-head center reveal">
+        <span class="badge"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v4M12 17v4M3 12h4M17 12h4M5.6 5.6l2.8 2.8M15.6 15.6l2.8 2.8M5.6 18.4l2.8-2.8M15.6 8.4l2.8-2.8"/></svg>Our baking school</span>
+        <h2 class="type-title">Learn To Bake With Confidence</h2>
+      </div>
+        <div class="split-row reveal">
+          <div class="split-media"><div class="img-holder"></div></div>
+          <div class="split-text">
+            <h3 class="type-h3">Beginner Workshops</h3>
+            <p>New to baking? Our beginner classes cover the fundamentals step by step, so you leave with the skills and confidence to keep baking at home.</p>
+            <ul class="check-list">
+              <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7"/></svg>No experience needed, just bring your enthusiasm</li>
+              <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7"/></svg>Learn the basics of dough, proving and baking</li>
+              <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7"/></svg>Take home everything you bake, plus the recipes</li>
+            </ul>
+            <div class="stats">
+              <div><strong>8+</strong><span>Beginner Classes</span></div>
+              <div><strong>3 hrs</strong><span>Average Class Length</span></div>
+            </div>
+            <div class="btn-row"><a href="book.html" class="btn btn-soft">Book a Class<svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></a><a href="workshops.html" class="btn-text">View Workshops<svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
+          </div>
+        </div>
+        <div class="split-row reverse reveal">
+          <div class="split-media"><div class="img-holder"></div></div>
+          <div class="split-text">
+            <h3 class="type-h3">Masterclasses</h3>
+            <p>Ready to go further? Our masterclasses dive deep into specialist techniques like laminated pastry, advanced sourdough and cake decorating.</p>
+            <ul class="check-list">
+              <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7"/></svg>Advanced techniques taught by professional bakers</li>
+              <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7"/></svg>Small groups for focused, one-on-one guidance</li>
+              <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7"/></svg>Perfect for keen home bakers wanting a challenge</li>
+            </ul>
+            <div class="stats">
+              <div><strong>6+</strong><span>Masterclasses</span></div>
+              <div><strong>8</strong><span>Max Students Per Class</span></div>
+            </div>
+            <div class="btn-row"><a href="book.html" class="btn btn-soft">Book a Class<svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></a><a href="workshops.html" class="btn-text">View Workshops<svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container faq-grid">
+        <div class="faq-intro reveal">
+          <span class="badge"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v4M12 17v4M3 12h4M17 12h4M5.6 5.6l2.8 2.8M15.6 15.6l2.8 2.8M5.6 18.4l2.8-2.8M15.6 8.4l2.8-2.8"/></svg>FAQ</span>
+          <h2 class="type-title">Everything You Want To Know</h2>
+          <p class="lead">Can&rsquo;t find what you&rsquo;re looking for? <a href="contact.html" style="color:var(--black);text-decoration:underline">Get in touch</a> and we&rsquo;ll be happy to help.</p>
+        </div>
+        <div class="faq-list reveal">
+          <details class="faq-item">
+            <summary>Do I need any baking experience?<svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></summary>
+            <p>Not at all. Our workshops are designed for every level, including complete beginners. Our bakers will guide you through every step.</p>
+          </details>
+          <details class="faq-item">
+            <summary>What should I bring to a workshop?<svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></summary>
+            <p>Just yourself! We provide aprons, ingredients, equipment and containers to take your bakes home.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Can you cater for dietary requirements?<svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></summary>
+            <p>Let us know when you book and we'll do our best to help. Some classes can be adapted for vegetarian or dairy-free diets.</p>
+          </details>
+          <details class="faq-item">
+            <summary>How long are gift vouchers valid for?<svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></summary>
+            <p>Our gift vouchers are valid for 12 months from the date of purchase and can be used for any workshop.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-head split-head reveal">
+          <div>
+            <span class="badge"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v4M12 17v4M3 12h4M17 12h4M5.6 5.6l2.8 2.8M15.6 15.6l2.8 2.8M5.6 18.4l2.8-2.8M15.6 8.4l2.8-2.8"/></svg>News &amp; recipes</span>
+            <h2 class="type-title" style="margin-top:20px">Latest Updates And Recipes From Our Kitchen</h2>
+          </div>
+          <a href="news.html" class="btn btn-soft">View All News<svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+        </div>
+        <div class="news-grid reveal">
+          <article class="news-card">
+            <div class="news-media">
+              <div class="img-holder"></div>
+              <h3>Five Tips For Your Best Ever Sourdough At Home</h3>
+            </div>
+            <div class="news-foot"><span>Fellows Bakery</span><span>Nov 12, 2026</span></div>
+          </article>
+          <article class="news-card">
+            <div class="news-media">
+              <div class="img-holder"></div>
+              <h3>Meet The Team: A Morning With Our Head Baker</h3>
+            </div>
+            <div class="news-foot"><span>Fellows Bakery</span><span>Oct 28, 2026</span></div>
+          </article>
+          <article class="news-card">
+            <div class="news-media">
+              <div class="img-holder"></div>
+              <h3>What&rsquo;s New On The Counter This Season</h3>
+            </div>
+            <div class="news-foot"><span>Fellows Bakery</span><span>Oct 9, 2026</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-section">
+      <div class="container">
+        <div class="cta-box reveal">
+          <div>
+            <span class="badge badge-light"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v4M12 17v4M3 12h4M17 12h4M5.6 5.6l2.8 2.8M15.6 15.6l2.8 2.8M5.6 18.4l2.8-2.8M15.6 8.4l2.8-2.8"/></svg>Start baking today</span>
+            <h2 class="type-title">Join Us In The Kitchen And Bake Something Great</h2>
+          </div>
+          <a href="book.html" class="btn btn-light">Book a Class Today<svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+        </div>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <div class="container footer-inner">
-      <div class="footer-brand">
-        <div class="logo placeholder logo-light">LOGO</div>
-        <p>Bakery &amp; Cooking School</p>
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="index.html" aria-label="Fellows Bakery home">
+            <img src="images/logo-black.png" alt="Fellows Bakery" width="800" height="578" loading="lazy">
+          </a>
+          <p>Real bread, pastries and hands-on baking classes, made fresh every day.</p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Company</h4>
+          <a href="index.html">Home</a>
+          <a href="our-story.html">About Us</a>
+          <a href="workshops.html">Workshops</a>
+          <a href="vouchers.html">Gift Vouchers</a>
+          <a href="visit.html">Visit Us</a>
+        </div>
+
+        <div class="footer-col">
+          <h4>Support</h4>
+          <a href="book.html">Book a Class</a>
+          <a href="community.html">Community</a>
+          <a href="news.html">News</a>
+          <a href="faqs.html">FAQs</a>
+          <a href="contact.html">Contact</a>
+        </div>
+
+        <div class="footer-col">
+          <h4>Social Links</h4>
+          <a href="#" target="_blank" rel="noopener">Facebook</a>
+          <a href="#" target="_blank" rel="noopener">Instagram</a>
+        </div>
       </div>
 
-      <div class="footer-col">
-        <h4>Explore</h4>
-        <a href="workshops.html">Workshops</a>
-        <a href="vouchers.html">Gift Vouchers</a>
-        <a href="community.html">Community</a>
+      <div class="footer-bottom">
+        <p>&copy;<span id="year">2026</span> Fellows Bakery. All Rights Reserved</p>
+        <nav aria-label="Legal">
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms &amp; Conditions</a>
+        </nav>
       </div>
-
-      <div class="footer-col">
-        <h4>About</h4>
-        <a href="our-story.html">Our Story</a>
-        <a href="visit.html">Locations</a>
-        <a href="contact.html">Contact</a>
-      </div>
-
-      <div class="footer-col">
-        <h4>Help</h4>
-        <a href="faqs.html">FAQs</a>
-        <a href="terms.html">Terms &amp; Conditions</a>
-        <a href="privacy.html">Privacy Policy</a>
-      </div>
-    </div>
-
-    <div class="container footer-bottom">
-      <p>&copy; <span id="year"></span> Fellows Kitchen. All rights reserved.</p>
     </div>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="script.js" defer></script>
 </body>
 </html>

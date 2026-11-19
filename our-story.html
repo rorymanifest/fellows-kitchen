@@ -3,92 +3,194 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Our Story | Fellows Kitchen</title>
-  <meta name="description" content="The story behind Fellows Kitchen.">
+  <title>About Us | Fellows Bakery</title>
+  <meta name="description" content="The story behind Fellows Bakery.">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="icon" type="image/png" href="images/logo-black.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600&display=swap">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
   <header class="site-header">
     <div class="container header-inner">
-      <a href="index.html" class="logo placeholder" aria-label="Fellows Kitchen home">LOGO</a>
+      <a href="index.html" class="logo" aria-label="Fellows Bakery home">
+        <img src="images/logo-black.png" alt="Fellows Bakery" width="800" height="578">
+      </a>
 
-      <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
-
-      <nav class="main-nav">
+      <nav class="main-nav" aria-label="Main">
+        <a href="index.html">Home</a>
+        <a href="our-story.html" aria-current="page">About Us</a>
         <a href="workshops.html">Workshops</a>
         <a href="vouchers.html">Gift Vouchers</a>
-        <a href="community.html">Community</a>
         <a href="visit.html">Visit Us</a>
-        <a href="our-story.html" aria-current="page">Our Story</a>
-        <a href="book.html" class="btn btn-small">Book a Class</a>
+        <a href="contact.html">Contact</a>
       </nav>
+
+      <div class="header-actions">
+        <a href="book.html" class="btn btn-dark">Book a Class<svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+        <button class="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
     </div>
+
+    <nav class="mobile-menu" id="mobile-menu" aria-label="Mobile">
+      <div class="container">
+        <a href="index.html">Home</a>
+        <a href="our-story.html" aria-current="page">About Us</a>
+        <a href="workshops.html">Workshops</a>
+        <a href="vouchers.html">Gift Vouchers</a>
+        <a href="visit.html">Visit Us</a>
+        <a href="contact.html">Contact</a>
+        <a href="book.html" class="btn btn-dark">Book a Class<svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+      </div>
+    </nav>
   </header>
 
   <main>
 
-    <section class="page-header">
-      <div class="container narrow">
-        <h1>Our Story</h1>
-        <p>How Fellows Kitchen began.</p>
+    <section class="page-hero">
+      <div class="container">
+        <span class="badge"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v4M12 17v4M3 12h4M17 12h4M5.6 5.6l2.8 2.8M15.6 15.6l2.8 2.8M5.6 18.4l2.8-2.8M15.6 8.4l2.8-2.8"/></svg>About us</span>
+        <h1 class="type-title">A Bakery Built On Real Bread And Good Company</h1>
+        <p class="lead">Add the story of how Fellows Bakery began here: who started it, why, and what makes it special.</p>
       </div>
     </section>
 
-    <section class="split container">
-      <div class="placeholder split-image">IMAGE</div>
-      <div class="split-text">
-        <h2>Where it started</h2>
-        <p>Add the story of how Fellows Kitchen began here – who started it, why, and what makes it special.</p>
+    <section class="section">
+      <div class="container">
+        <div class="split-row reveal">
+          <div class="split-media"><div class="img-holder"></div></div>
+          <div class="split-text">
+            <h3 class="type-h3">Where It Started</h3>
+            <p>Add your origin story here. Where did the idea come from, who baked the first loaf, and how has the bakery grown since then?</p>
+            <ul class="check-list">
+              <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7"/></svg>Founded by a small team of passionate bakers</li>
+              <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7"/></svg>Started with a single oven and a sourdough starter</li>
+              <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7"/></svg>Now baking for our community every single day</li>
+            </ul>
+          </div>
+        </div>
+        <div class="split-row reverse reveal">
+          <div class="split-media"><div class="img-holder"></div></div>
+          <div class="split-text">
+            <h3 class="type-h3">What We Believe</h3>
+            <p>Add your values here: good ingredients, learning by doing, and sharing food with the people you love.</p>
+            <ul class="check-list">
+              <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7"/></svg>Real ingredients, with nothing artificial</li>
+              <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7"/></svg>Slow fermentation for flavour and digestibility</li>
+              <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7"/></svg>Baking knowledge is meant to be shared</li>
+            </ul>
+            <div class="stats">
+              <div><strong>2015</strong><span>Year Founded</span></div>
+              <div><strong>15+</strong><span>Bakers In Our Team</span></div>
+            </div>
+            <div class="btn-row"><a href="workshops.html" class="btn btn-soft">See Our Workshops<svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></a><a href="visit.html" class="btn-text">Visit Us<svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section class="split split-reverse container">
-      <div class="placeholder split-image">IMAGE</div>
-      <div class="split-text">
-        <h2>What we believe</h2>
-        <p>Add your values here – good ingredients, learning by doing, and sharing food with the people you love.</p>
-        <a href="workshops.html" class="btn">See our workshops</a>
+    <section class="panel section">
+      <div class="container">
+        <div class="section-head split-head reveal">
+          <div>
+            <span class="badge"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v4M12 17v4M3 12h4M17 12h4M5.6 5.6l2.8 2.8M15.6 15.6l2.8 2.8M5.6 18.4l2.8-2.8M15.6 8.4l2.8-2.8"/></svg>Why choose us</span>
+            <h2 class="type-title" style="margin-top:20px">Why Choose Fellows Bakery</h2>
+          </div>
+          <a href="our-story.html" class="btn btn-light">Learn More<svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+        </div>
+        <div class="why-grid">
+          <div class="feature-list reveal">
+          <article class="feature">
+            <div class="card-top"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0M16 4.6a3.5 3.5 0 0 1 0 6.8M18 14a6.5 6.5 0 0 1 3.5 6"/></svg><span class="card-num">001//</span></div>
+            <h3 class="type-h6">Small Class Sizes</h3>
+            <p>Classes are capped so every student gets plenty of hands-on time and one-on-one help.</p>
+          </article>
+          <article class="feature">
+            <div class="card-top"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17.5h10V21H7zM7 17.5V14a4 4 0 0 1-1.5-7.5A4.2 4.2 0 0 1 12 4a4.2 4.2 0 0 1 6.5 2.5A4 4 0 0 1 17 14v3.5"/></svg><span class="card-num">002//</span></div>
+            <h3 class="type-h6">Taught By Professional Bakers</h3>
+            <p>Learn real techniques from experienced bakers who teach the way they bake every day.</p>
+          </article>
+          <article class="feature is-active">
+            <div class="card-top"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21V9"/><path d="M12 9C9.5 9 8.5 6.5 8.5 4.5 11 4.5 12 6.5 12 9Zm0 0c2.5 0 3.5-2.5 3.5-4.5C13 4.5 12 6.5 12 9ZM12 15c-2.5 0-3.5-2.5-3.5-4.5 2.5 0 3.5 2 3.5 4.5Zm0 0c2.5 0 3.5-2.5 3.5-4.5-2.5 0-3.5 2-3.5 4.5Z"/></svg><span class="card-num">003//</span></div>
+            <h3 class="type-h6">Everything Provided</h3>
+            <p>Quality ingredients, aprons and equipment are all included, so you can just turn up and bake.</p>
+          </article>
+          </div>
+          <div class="why-media reveal">
+            <div class="img-holder"></div>
+            <div class="stat-glass">
+              <strong>2K+</strong>
+              <h3>Students Taught</h3>
+              <p>Thousands of home bakers have learned new skills in our kitchen.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-section">
+      <div class="container">
+        <div class="cta-box reveal">
+          <div>
+            <span class="badge badge-light"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v4M12 17v4M3 12h4M17 12h4M5.6 5.6l2.8 2.8M15.6 15.6l2.8 2.8M5.6 18.4l2.8-2.8M15.6 8.4l2.8-2.8"/></svg>Start baking today</span>
+            <h2 class="type-title">Join Us In The Kitchen And Bake Something Great</h2>
+          </div>
+          <a href="book.html" class="btn btn-light">Book a Class Today<svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+        </div>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <div class="container footer-inner">
-      <div class="footer-brand">
-        <div class="logo placeholder logo-light">LOGO</div>
-        <p>Bakery &amp; Cooking School</p>
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="index.html" aria-label="Fellows Bakery home">
+            <img src="images/logo-black.png" alt="Fellows Bakery" width="800" height="578" loading="lazy">
+          </a>
+          <p>Real bread, pastries and hands-on baking classes, made fresh every day.</p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Company</h4>
+          <a href="index.html">Home</a>
+          <a href="our-story.html">About Us</a>
+          <a href="workshops.html">Workshops</a>
+          <a href="vouchers.html">Gift Vouchers</a>
+          <a href="visit.html">Visit Us</a>
+        </div>
+
+        <div class="footer-col">
+          <h4>Support</h4>
+          <a href="book.html">Book a Class</a>
+          <a href="community.html">Community</a>
+          <a href="news.html">News</a>
+          <a href="faqs.html">FAQs</a>
+          <a href="contact.html">Contact</a>
+        </div>
+
+        <div class="footer-col">
+          <h4>Social Links</h4>
+          <a href="#" target="_blank" rel="noopener">Facebook</a>
+          <a href="#" target="_blank" rel="noopener">Instagram</a>
+        </div>
       </div>
 
-      <div class="footer-col">
-        <h4>Explore</h4>
-        <a href="workshops.html">Workshops</a>
-        <a href="vouchers.html">Gift Vouchers</a>
-        <a href="community.html">Community</a>
+      <div class="footer-bottom">
+        <p>&copy;<span id="year">2026</span> Fellows Bakery. All Rights Reserved</p>
+        <nav aria-label="Legal">
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms &amp; Conditions</a>
+        </nav>
       </div>
-
-      <div class="footer-col">
-        <h4>About</h4>
-        <a href="our-story.html">Our Story</a>
-        <a href="visit.html">Locations</a>
-        <a href="contact.html">Contact</a>
-      </div>
-
-      <div class="footer-col">
-        <h4>Help</h4>
-        <a href="faqs.html">FAQs</a>
-        <a href="terms.html">Terms &amp; Conditions</a>
-        <a href="privacy.html">Privacy Policy</a>
-      </div>
-    </div>
-
-    <div class="container footer-bottom">
-      <p>&copy; <span id="year"></span> Fellows Kitchen. All rights reserved.</p>
     </div>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="script.js" defer></script>
 </body>
 </html>

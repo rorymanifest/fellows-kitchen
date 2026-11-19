@@ -3,81 +3,156 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Contact | Fellows Kitchen</title>
-  <meta name="description" content="Get in touch with Fellows Kitchen.">
+  <title>Contact | Fellows Bakery</title>
+  <meta name="description" content="Get in touch with Fellows Bakery.">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="icon" type="image/png" href="images/logo-black.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600&display=swap">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
   <header class="site-header">
     <div class="container header-inner">
-      <a href="index.html" class="logo placeholder" aria-label="Fellows Kitchen home">LOGO</a>
+      <a href="index.html" class="logo" aria-label="Fellows Bakery home">
+        <img src="images/logo-black.png" alt="Fellows Bakery" width="800" height="578">
+      </a>
 
-      <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
-
-      <nav class="main-nav">
+      <nav class="main-nav" aria-label="Main">
+        <a href="index.html">Home</a>
+        <a href="our-story.html">About Us</a>
         <a href="workshops.html">Workshops</a>
         <a href="vouchers.html">Gift Vouchers</a>
-        <a href="community.html">Community</a>
         <a href="visit.html">Visit Us</a>
-        <a href="our-story.html">Our Story</a>
-        <a href="book.html" class="btn btn-small">Book a Class</a>
+        <a href="contact.html" aria-current="page">Contact</a>
       </nav>
+
+      <div class="header-actions">
+        <a href="book.html" class="btn btn-dark">Book a Class<svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+        <button class="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
     </div>
+
+    <nav class="mobile-menu" id="mobile-menu" aria-label="Mobile">
+      <div class="container">
+        <a href="index.html">Home</a>
+        <a href="our-story.html">About Us</a>
+        <a href="workshops.html">Workshops</a>
+        <a href="vouchers.html">Gift Vouchers</a>
+        <a href="visit.html">Visit Us</a>
+        <a href="contact.html" aria-current="page">Contact</a>
+        <a href="book.html" class="btn btn-dark">Book a Class<svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+      </div>
+    </nav>
   </header>
 
   <main>
 
-    <section class="page-header">
-      <div class="container narrow">
-        <h1>Contact</h1>
-        <p>We'd love to hear from you.</p>
+    <section class="page-hero">
+      <div class="container">
+        <span class="badge"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v4M12 17v4M3 12h4M17 12h4M5.6 5.6l2.8 2.8M15.6 15.6l2.8 2.8M5.6 18.4l2.8-2.8M15.6 8.4l2.8-2.8"/></svg>Contact</span>
+        <h1 class="type-title">We&rsquo;d Love To Hear From You</h1>
+        <p class="lead">Questions about workshops, cake orders or catering? Get in touch and we'll get back to you soon.</p>
       </div>
     </section>
 
-    <section class="container narrow prose">
-      <p><strong>Email</strong><br><a href="mailto:hello@example.com">hello@example.com</a></p>
-      <p><strong>Phone</strong><br>000 000 0000</p>
-      <p><strong>Address</strong><br>123 Example Street, Suburb, City 0000</p>
+    <section class="section">
+      <div class="container">
+        <div class="card-grid-3">
+          <article class="contact-card reveal">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3.5 7 8.5 6 8.5-6"/></svg>
+            <div><h3 class="type-h6">Email</h3><a href="mailto:hello@example.com">hello@example.com</a></div>
+          </article>
+          <article class="contact-card reveal">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h3.5l2 5-2.5 1.5a11 11 0 0 0 5.5 5.5L15 13.5l5 2V19a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2Z"/></svg>
+            <div><h3 class="type-h6">Phone</h3><a href="tel:0000000000">000 000 0000</a></div>
+          </article>
+          <article class="contact-card reveal">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.2a7 7 0 0 1 14 0C19 14.8 12 21 12 21Z"/><circle cx="12" cy="9.8" r="2.5"/></svg>
+            <div><h3 class="type-h6">Visit</h3><p>123 Example Street, Suburb, City 0000</p></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container faq-grid">
+        <div class="faq-intro reveal">
+          <span class="badge"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v4M12 17v4M3 12h4M17 12h4M5.6 5.6l2.8 2.8M15.6 15.6l2.8 2.8M5.6 18.4l2.8-2.8M15.6 8.4l2.8-2.8"/></svg>FAQ</span>
+          <h2 class="type-title">Everything You Want To Know</h2>
+          <p class="lead">Can&rsquo;t find what you&rsquo;re looking for? <a href="contact.html" style="color:var(--black);text-decoration:underline">Get in touch</a> and we&rsquo;ll be happy to help.</p>
+        </div>
+        <div class="faq-list reveal">
+          <details class="faq-item">
+            <summary>Do I need any baking experience?<svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></summary>
+            <p>Not at all. Our workshops are designed for every level, including complete beginners. Our bakers will guide you through every step.</p>
+          </details>
+          <details class="faq-item">
+            <summary>What should I bring to a workshop?<svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></summary>
+            <p>Just yourself! We provide aprons, ingredients, equipment and containers to take your bakes home.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Can you cater for dietary requirements?<svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></summary>
+            <p>Let us know when you book and we'll do our best to help. Some classes can be adapted for vegetarian or dairy-free diets.</p>
+          </details>
+          <details class="faq-item">
+            <summary>How long are gift vouchers valid for?<svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></summary>
+            <p>Our gift vouchers are valid for 12 months from the date of purchase and can be used for any workshop.</p>
+          </details>
+        </div>
+      </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <div class="container footer-inner">
-      <div class="footer-brand">
-        <div class="logo placeholder logo-light">LOGO</div>
-        <p>Bakery &amp; Cooking School</p>
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="index.html" aria-label="Fellows Bakery home">
+            <img src="images/logo-black.png" alt="Fellows Bakery" width="800" height="578" loading="lazy">
+          </a>
+          <p>Real bread, pastries and hands-on baking classes, made fresh every day.</p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Company</h4>
+          <a href="index.html">Home</a>
+          <a href="our-story.html">About Us</a>
+          <a href="workshops.html">Workshops</a>
+          <a href="vouchers.html">Gift Vouchers</a>
+          <a href="visit.html">Visit Us</a>
+        </div>
+
+        <div class="footer-col">
+          <h4>Support</h4>
+          <a href="book.html">Book a Class</a>
+          <a href="community.html">Community</a>
+          <a href="news.html">News</a>
+          <a href="faqs.html">FAQs</a>
+          <a href="contact.html">Contact</a>
+        </div>
+
+        <div class="footer-col">
+          <h4>Social Links</h4>
+          <a href="#" target="_blank" rel="noopener">Facebook</a>
+          <a href="#" target="_blank" rel="noopener">Instagram</a>
+        </div>
       </div>
 
-      <div class="footer-col">
-        <h4>Explore</h4>
-        <a href="workshops.html">Workshops</a>
-        <a href="vouchers.html">Gift Vouchers</a>
-        <a href="community.html">Community</a>
+      <div class="footer-bottom">
+        <p>&copy;<span id="year">2026</span> Fellows Bakery. All Rights Reserved</p>
+        <nav aria-label="Legal">
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms &amp; Conditions</a>
+        </nav>
       </div>
-
-      <div class="footer-col">
-        <h4>About</h4>
-        <a href="our-story.html">Our Story</a>
-        <a href="visit.html">Locations</a>
-        <a href="contact.html">Contact</a>
-      </div>
-
-      <div class="footer-col">
-        <h4>Help</h4>
-        <a href="faqs.html">FAQs</a>
-        <a href="terms.html">Terms &amp; Conditions</a>
-        <a href="privacy.html">Privacy Policy</a>
-      </div>
-    </div>
-
-    <div class="container footer-bottom">
-      <p>&copy; <span id="year"></span> Fellows Kitchen. All rights reserved.</p>
     </div>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="script.js" defer></script>
 </body>
 </html>
