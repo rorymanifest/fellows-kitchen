@@ -101,6 +101,13 @@ p { margin: 0; }
   border-radius: var(--radius);
   width: 100%;
 }
+img.img-holder {
+  object-fit: cover;
+  object-position: center;
+  height: auto;
+}
+.why-media img.img-holder,
+.news-media img.img-holder { height: 100%; }
 
 /* ===== Type styles ===== */
 .type-h1 {
@@ -953,3 +960,5 @@ p { margin: 0; }
   .type-title { font-size: 31px; }
   .hero .btn { padding: 12px 16px; }
 }
+
+.why-media img.img-holder { object-position: center top; }
