@@ -18,13 +18,13 @@
 
   /* Type (from the export) */
   --font: "Urbanist", system-ui, sans-serif;
-  --text-12: 12px;
-  --text-14: 14px;
-  --text-16: 16px;
-  --text-18: 18px;
-  --text-20: 20px;
-  --text-24: 24px;
-  --text-32: 32px;
+  --text-12: 13px;
+  --text-14: 15px;
+  --text-16: 17px;
+  --text-18: 19px;
+  --text-20: 21px;
+  --text-24: 25px;
+  --text-32: 34px;
   --text-60: 60px;
   --text-62: 62px;
 
@@ -447,7 +447,7 @@ img.img-holder {
 
 .carousel {
   display: flex;
-  gap: 8px;
+  gap: 20px;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
@@ -455,7 +455,7 @@ img.img-holder {
 }
 .carousel::-webkit-scrollbar { display: none; }
 .carousel > * {
-  flex: 0 0 calc((100% - 16px) / 3);
+  flex: 0 0 calc((100% - 40px) / 3);
   scroll-snap-align: start;
 }
 
@@ -876,7 +876,7 @@ img.img-holder {
   .hero-story { left: var(--gutter); right: var(--gutter); bottom: 32px; }
 
   .category-grid { grid-template-columns: repeat(2, 1fr); }
-  .carousel > * { flex-basis: calc((100% - 8px) / 2); }
+  .carousel > * { flex-basis: calc((100% - 20px) / 2); }
 
   .why-grid,
   .process-grid,
@@ -962,3 +962,11 @@ img.img-holder {
 }
 
 .why-media img.img-holder { object-position: center top; }
+
+/* Workshop cards in the slider */
+.event-card { display: block; color: inherit; }
+.event-card .img-holder { transition: opacity 0.3s; }
+.event-card:hover .img-holder { opacity: 0.88; }
+.event-card .event-meta { justify-content: space-between; align-items: center; }
+.event-price { font-size: var(--text-16); font-weight: 600; color: var(--ink); }
+.event-card:hover .row-link .icon { transform: rotate(45deg); }
