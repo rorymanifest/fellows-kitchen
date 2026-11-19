@@ -774,6 +774,15 @@ p { margin: 0; }
 }
 .footer-brand img { height: 110px; width: auto; margin-bottom: 20px; }
 .footer-brand p { max-width: 280px; font-size: var(--text-16); }
+.footer-contact {
+  font-style: normal;
+  margin-top: 20px;
+  display: grid;
+  gap: 6px;
+  justify-items: start;
+}
+.footer-contact a { color: var(--ink); font-weight: 500; overflow-wrap: anywhere; }
+.footer-contact a:hover { text-decoration: underline; }
 .footer-col h4 {
   font-size: var(--text-20);
   letter-spacing: -0.4px;
